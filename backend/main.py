@@ -41,7 +41,8 @@ async def upload_resume(file: UploadFile = File(...)) -> dict:
     return {
     "resume_id": resume_id,
     "name": resume.name
-}
+    }
+
     
 
 
