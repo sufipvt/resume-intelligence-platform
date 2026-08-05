@@ -8,6 +8,12 @@ class Experience(BaseModel):
     description: str | None = None
     skills_used: list[str] = Field(default_factory=list)
 
+class Project(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    technologies: list[str] = Field(default_factory=list)
+    features: list[str] = Field(default_factory=list)
+
 class Resume(BaseModel):
     name: str | None = None
     email: str | None = None
@@ -18,7 +24,7 @@ class Resume(BaseModel):
     skills: list[str] = Field(default_factory=list)
     experiences: list[Experience] = Field(default_factory=list)
     education: list[str] = Field(default_factory=list)
-    projects: list[str] = Field(default_factory=list)
+    projects: list[Project] = Field(default_factory=list)
     certifications: list[str] = Field(default_factory=list)
 
 

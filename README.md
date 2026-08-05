@@ -8,9 +8,9 @@ Built using **FastAPI**, **Groq GPT-OSS-120B**, **Pydantic**, and a responsive *
 
 ## 🚀 Live Demo
 
-> **Frontend:** *(Coming Soon)*
+> **Frontend:** https://resume-intelligence-platform-plum.vercel.app/
 
-> **Backend API:** *(Coming Soon)*
+> **Backend API:** https://resume-intelligence-api-3zg1.onrender.com
 
 ---
 
