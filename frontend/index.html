@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Intelligence Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Markdown Renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= Header ================= -->
+
+        <header>
+
+            <div class="logo">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <div>
+
+                    <h1>Resume Intelligence Platform</h1>
+
+                    <p>Upload a resume and chat with AI</p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= Upload Card ================= -->
+
+        <section class="upload-card">
+
+            <div class="upload-left">
+
+                <input
+                    type="file"
+                    id="resumeFile"
+                    accept=".pdf">
+
+                <button id="uploadBtn">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Upload Resume
+
+                </button>
+
+            </div>
+
+            <div id="uploadStatus" class="status">
+
+                <i class="fa-regular fa-circle"></i>
+
+                Waiting for Resume
+
+            </div>
+
+        </section>
+
+        <!-- ================= Quick Actions ================= -->
+
+        <section class="quick-actions">
+
+            <button class="action-btn" data-question="Summarize the resume">
+                📄 Summary
+            </button>
+
+            <button class="action-btn" data-question="List all technical skills">
+                🛠 Skills
+            </button>
+
+            <button class="action-btn" data-question="Describe work experience">
+                💼 Experience
+            </button>
+
+            <button class="action-btn" data-question="List all projects">
+                🚀 Projects
+            </button>
+
+            <button class="action-btn" data-question="Generate interview questions based on this resume">
+                🎯 Interview Questions
+            </button>
+
+        </section>
+
+        <!-- ================= Chat ================= -->
+
+        <main id="chatBox">
+
+            <div class="welcome-card">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h2>Welcome to Resume Intelligence Platform</h2>
+
+                <p>
+
+                    Upload a resume and ask questions naturally.
+
+                </p>
+
+                <div class="examples">
+
+                    <div>
+
+                        💬 Summarize this resume
+
+                    </div>
+
+                    <div>
+
+                        💬 What are the candidate's strengths?
+
+                    </div>
+
+                    <div>
+
+                        💬 List technical skills
+
+                    </div>
+
+                    <div>
+
+                        💬 Generate interview questions
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- ================= Typing Indicator ================= -->
+
+        <div id="typingIndicator" class="typing">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            Resume AI is thinking...
+
+        </div>
+
+        <!-- ================= Chat Input ================= -->
+
+        <footer class="chat-input">
+
+            <input
+
+                type="text"
+
+                id="question"
+
+                placeholder="Ask anything about the resume..."
+
+                autocomplete="off"
+
+                disabled>
+
+            <button
+
+                id="sendBtn"
+
+                disabled>
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
