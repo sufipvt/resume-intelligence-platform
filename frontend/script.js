@@ -2,7 +2,7 @@
             CONFIGURATION
 ========================================== */
 
-const API = "http://127.0.0.1:8000";
+const API = "https://resume-intelligence-api-3zg1.onrender.com";
 
 
 /* ==========================================
